@@ -1,0 +1,150 @@
+// Widescreens
+@include mediaXl {
+
+}
+
+// Deskpots & Laptops
+@include mediaLg {
+
+}
+
+// Tablets & Small Laptops
+@include mediaMd {
+// Index.html
+
+.wrapper {
+
+    button {
+        height: 2rem;
+        width: 7rem;
+        font-size: 18px;
+    }
+
+    img {
+        width: 50px;
+    }
+
+    a{
+        width: 10rem;
+        height: 2rem;
+        font-size: 15px;
+    }
+}
+
+main {
+    h2 {
+        font-size: 30px;
+    }
+}
+}
+
+// Smartphones
+@include mediaSm {
+
+     //Meditation.html
+     .container {
+        .arrow-back {
+            height: 50px;
+            width: 50px;
+            padding: 10px;
+        }
+    
+        .time-select{
+            grid-template-columns: repeat(2, 1fr);
+            margin-left: 20px;
+            padding: 10px;
+            margin-top: 40px;
+    
+            button {
+                width: 8rem;
+                height: 2rem;
+                margin: 5px;
+                font-size: 10px;
+            }
+        }
+    
+        .player-container{
+            height: 50vh;
+            position: relative;
+    
+            .play{
+                width:50px;
+            }
+        }
+
+        .time-display{
+            font-size: 20px;
+        }
+    
+        .sound-picker{
+            button{
+                height: 60px;
+                width: 60px;
+                padding: 10px;
+            }
+        }
+
+        .stop-container{
+            height: 100px;
+            .stop{
+                height: 50px;
+                width: 230px;
+                font-size: 20px;
+            }
+        }
+
+    }
+
+    // Index Modal
+    .bg-modal{
+        .modal-content {
+            width: 400px;
+            height: 300px;
+            .close{
+               font-size: 30px;
+           }
+            .modal-image {
+                width: 50px;
+            }
+    
+            li{
+                padding: 4px;
+                list-style: lower-roman;
+            }
+    
+            ul{
+                font-size: 12px;
+                line-height: 0.9;
+            }
+        }
+     }
+
+    // Meditation Modal 
+    .no-time{
+        .warning-no-time{
+            width: 150px;
+            padding: 15px;
+            font-size: 10px;
+        }
+     }
+
+     .modal-pick-time{
+        .pick-time{
+            width: 300px;
+            height: 150px;
+            font-size: 12px;
+
+            input[type=number]{
+                padding: 5px;
+            }
+
+            button{
+                height: 20px;
+                width: 70px;
+            }
+        }   
+
+
+
+    }
+}
